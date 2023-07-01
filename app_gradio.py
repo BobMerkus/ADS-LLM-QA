@@ -5,10 +5,11 @@ from transformers import GenerationConfig
 
 # custom imports
 from main import document_store_import, config_import_yaml, get_prompt
-from huggingface_webscraper import get_model_names
+from doc.huggingface_webscraper import get_model_names
 
 config = config_import_yaml() # import config
 document_store, documents, labels = document_store_import(config, 'demo')
+prompt_lfqa = get_prompt('lfqa')
 
 from haystack.nodes import BM25Retriever
 retriever = BM25Retriever(document_store=document_store)
@@ -16,7 +17,6 @@ retriever = BM25Retriever(document_store=document_store)
 # reader = TransformersReader(config['reader']['name'])
 # prompt = get_prompt('question-answering')
 # generator = PromptNode(default_prompt_template='question-answering')
-prompt_lfqa = get_prompt('lfqa')
 #model_names = get_model_names('text2text-generation')
 model_name_or_path = config['generator']['name']
 GENERATION_KWARGS = {
