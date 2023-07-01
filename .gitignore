@@ -1,0 +1,13 @@
+__pycache__/
+data/bot_memory/
+data/faiss/
+data/stackexchange_kubernetes.db
+data/ca.crt
+data/out/
+data/AZURE_BING_KEY.txt
+data/OPEN_AI_KEY.txt
+data/GITHUB_KEY.txt
+doc/
+models/
+test.py
+requirements_manual.txt
