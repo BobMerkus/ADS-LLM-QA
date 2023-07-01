@@ -9,9 +9,9 @@ We use the Windows Subsystem for Linux (WSL 2).
 1. Setup Python Environment 
     - Conda: `conda env create -f environment.yml`
     - pip: `pip install -r requirements.txt`
-3. Setup Haystack Backend (ElasticSearch/FAISS). Start the ElasticSearch document store with a single node using `launch_es()` from the `haystack.utils` module Warning: Running an elasticsearch instance on WSL is not recommended. It is recommended to run elasticsearch on a separate machine (e.g., a virtual machine or a cloud instance). Running locally (with multiple nodes) requires a lot of memory. If you decide to anyway, a local cluster (with 3 nodes) can be run using `docker compose up -d` in a terminal and make sure a valid certificate is contained in `./data/ca.crt` after setup. When encountering the error `max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]`, one should run: `sysctl -w vm.max_map_count=262144`.
-4. Create document store, write the documents (and generate embeddings if using a Neural retriever) + evaluation labels.
-5. Run inference for multiple models (Extractive + Generative). Models required for the analysis are not included in this repository, but are downloaded automatically through the Huggingface `transformers` library. 
+2. Setup Haystack Backend (ElasticSearch/FAISS). Start the ElasticSearch document store with a single node using `launch_es()` from the `haystack.utils` module Warning: Running an elasticsearch instance on WSL is not recommended. It is recommended to run elasticsearch on a separate machine (e.g., a virtual machine or a cloud instance). Running locally (with multiple nodes) requires a lot of memory. If you decide to anyway, a local cluster (with 3 nodes) can be run using `docker compose up -d` in a terminal and make sure a valid certificate is contained in `./data/ca.crt` after setup. When encountering the error `max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]`, one should run: `sysctl -w vm.max_map_count=262144`.
+3. Create document store, write the documents (and generate embeddings if using a Neural retriever) + evaluation labels.
+4. Run inference for multiple models (Extractive + Generative). Models required for the analysis are not included in this repository, but are downloaded automatically through the Huggingface `transformers` library. 
 
 Optionally: 
 - Setup OPEN_AI_KEY in `./data/OPEN_AI_KEY.txt` if you want to use Open AI models via the API.
@@ -23,7 +23,7 @@ Optionally:
 - `evaluate_answers`: Evaluates a list of answers against a list of labels.
 - `evaluate_pipeline`: Evaluates a pipeline with a specific retriever + model and saves the results to disk.
 - `main`: Main function that runs the analysis. It imports the configuration from `main.yml` and optionally overwrites some arguments using the command line (run `python main.py -h` for information).
-It starts by importing the documents + evaluation labels and then runs the `evaluate_pipeline` function for each pipeline. The results are saved to disk and can be analyzed using the `analysis.ipynb` notebook.
+It starts by importing the documents + evaluation labels and then runs the `evaluate_pipeline` function for each pipeline.
 - `import_results`: Reads the contents of all runtime results (configuration, pipeline output, evaluation metrics). Can be used for further analysis of the results.
 
 ### Models
