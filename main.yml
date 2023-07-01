@@ -63,78 +63,78 @@ models: {
   reader: {
 
     # BERT
-    #bert-tiny: google/bert_uncased_L-12_H-128_A-2,
-    bert-tiny-squad-v2: mrm8488/bert-tiny-finetuned-squadv2,
-    #bert-base: bert-base-uncased,
-    bert-base-squad-v2: deepset/bert-base-cased-squad2,
-    #bert-large: bert-large-uncased-whole-word-masking,
-    bert-large-squad-v1: bert-large-uncased-whole-word-masking-finetuned-squad,   
-    bert-large-squad-v2: deepset/bert-large-uncased-whole-word-masking-squad2,
+    # #bert-tiny: google/bert_uncased_L-12_H-128_A-2,
+    # bert-tiny-squad-v2: mrm8488/bert-tiny-finetuned-squadv2,
+    # #bert-base: bert-base-uncased,
+    # bert-base-squad-v2: deepset/bert-base-cased-squad2,
+    # #bert-large: bert-large-uncased-whole-word-masking,
+    # bert-large-squad-v1: bert-large-uncased-whole-word-masking-finetuned-squad,   
+    # bert-large-squad-v2: deepset/bert-large-uncased-whole-word-masking-squad2,
     
-    # DistilBERT
-    #distilbert-base-uncased:distilbert-base-uncased,
-    distilbert-base-squad-v1: distilbert-base-uncased-distilled-squad,
-    distilbert-base-squad-v2: twmkn9/distilbert-base-uncased-squad2,
+    # # DistilBERT
+    # #distilbert-base-uncased:distilbert-base-uncased,
+    # distilbert-base-squad-v1: distilbert-base-uncased-distilled-squad,
+    # distilbert-base-squad-v2: twmkn9/distilbert-base-uncased-squad2,
     
-    # RoBERTa
-    #xlm-roberta-base:xlm-roberta-base,
-    #xlm-roberta-large:xlm-roberta-large,
-    roberta-tiny-squad-v2: deepset/tinyroberta-squad2,
-    roberta-base-squad-v2: deepset/roberta-base-squad2,
-    roberta-base-squad-v2-distilled: deepset/roberta-base-squad2-distilled,
+    # # RoBERTa
+    # #xlm-roberta-base:xlm-roberta-base,
+    # #xlm-roberta-large:xlm-roberta-large,
+    # roberta-tiny-squad-v2: deepset/tinyroberta-squad2,
+    # roberta-base-squad-v2: deepset/roberta-base-squad2,
+    # roberta-base-squad-v2-distilled: deepset/roberta-base-squad2-distilled,
     roberta-large-squad-v2: deepset/roberta-large-squad2,
     
-    # ALBERT
-    #albert-base-v1:albert-base-v1,
-    #albert-xxlarge-v1:albert-xxlarge-v1,
-    #albert-base-v2:albert-base-v2,
-    #albert-xxlarge-v2:albert-xxlarge-v2,
-    albert-base-v2-squad-v2: twmkn9/albert-base-v2-squad2,
-    albert-xxlarge-v1-squad-v2: ahotrod/albert_xxlargev1_squad2_512,
-    albert-xxlarge-v2-squad-v2: mfeb/albert-xxlarge-v2-squad2,
-    #albert-xlarge-v2-squad-v2:ktrapeznikov/albert-xlarge-v2-squad-v2,
+    # # ALBERT
+    # #albert-base-v1:albert-base-v1,
+    # #albert-xxlarge-v1:albert-xxlarge-v1,
+    # #albert-base-v2:albert-base-v2,
+    # #albert-xxlarge-v2:albert-xxlarge-v2,
+    # albert-base-v2-squad-v2: twmkn9/albert-base-v2-squad2,
+    # albert-xxlarge-v1-squad-v2: ahotrod/albert_xxlargev1_squad2_512,
+    # albert-xxlarge-v2-squad-v2: mfeb/albert-xxlarge-v2-squad2,
+    # #albert-xlarge-v2-squad-v2:ktrapeznikov/albert-xlarge-v2-squad-v2,
     
-    # Longformer
-    longformer-base-squad-v1: valhalla/longformer-base-4096-finetuned-squadv1,
-    longformer-base-squad-v2: mrm8488/longformer-base-4096-finetuned-squadv2,
+    # # Longformer
+    # longformer-base-squad-v1: valhalla/longformer-base-4096-finetuned-squadv1,
+    # longformer-base-squad-v2: mrm8488/longformer-base-4096-finetuned-squadv2,
 
   },
   generator: {
 
-    # FLAN T-5
-    flan-t5-base: google/flan-t5-base,
-    flan-t5-large: google/flan-t5-large,
-    flan-t5-xl: google/flan-t5-xl,
-    #flan-t5-base-qa-qg-hl: valhalla/t5-base-qa-qg-hl,
-    #flan-t5-xl-fastchat: lmsys/fastchat-t5-3b-v1.0,
+    # # FLAN T-5
+    # flan-t5-base: google/flan-t5-base,
+    # flan-t5-large: google/flan-t5-large,
+    # flan-t5-xl: google/flan-t5-xl,
+    # #flan-t5-base-qa-qg-hl: valhalla/t5-base-qa-qg-hl,
+    # #flan-t5-xl-fastchat: lmsys/fastchat-t5-3b-v1.0,
     
-    # FLAN ALPACA
-    flan-alpaca-base: declare-lab/flan-alpaca-base,
-    flan-alpaca-gpt4-xl: declare-lab/flan-alpaca-gpt4-xl,
-    #flan-alpaca-gpt4all-xl: declare-lab/flan-gpt4all-xl,
-    flan-alpaca-sharegpt-xl: declare-lab/flan-sharegpt-xl,
+    # # FLAN ALPACA
+    # flan-alpaca-base: declare-lab/flan-alpaca-base,
+    # flan-alpaca-gpt4-xl: declare-lab/flan-alpaca-gpt4-xl,
+    # #flan-alpaca-gpt4all-xl: declare-lab/flan-gpt4all-xl,
+    # flan-alpaca-sharegpt-xl: declare-lab/flan-sharegpt-xl,
 
-    # BART
-    bart-lfqa: vblagoje/bart_lfqa,
-    bart-eli5: yjernite/bart_eli5,
-    # bart-eli5-passages: PrimeQA/eli5-fid-bart-large-with-colbert-passages,
-    bart-chatgpt: Qiliang/bart-large-cnn-samsum-ChatGPT_v3,
-    #bart-random: sshleifer/bart-tiny-random,
+    # # BART
+    # bart-lfqa: vblagoje/bart_lfqa,
+    # bart-eli5: yjernite/bart_eli5,
+    # # bart-eli5-passages: PrimeQA/eli5-fid-bart-large-with-colbert-passages,
+    # bart-chatgpt: Qiliang/bart-large-cnn-samsum-ChatGPT_v3,
+    # #bart-random: sshleifer/bart-tiny-random,
 
-    # # BLOOM
-    #bloom-560m: bigscience/bloom-560m,
+    # # # BLOOM
+    # #bloom-560m: bigscience/bloom-560m,
 
-    # # LLaMa
-    #llama-7b: models/llama-7b-hf,
-    #llama-7b: decapoda-research/llama-7b-hf,
+    # # # LLaMa
+    # #llama-7b: models/llama-7b-hf,
+    # #llama-7b: decapoda-research/llama-7b-hf,
 
-    # OPENAI 
-    gpt-2: gpt2,
-    # gpt-3.5-turbo: gpt-3.5-turbo,
-    gpt-3.5-turbo-16k: gpt-3.5-turbo-16k,
-    # gpt-4: gpt-4,
+    # # OPENAI 
+    # gpt-2: gpt2,
+    # # gpt-3.5-turbo: gpt-3.5-turbo,
+    # gpt-3.5-turbo-16k: gpt-3.5-turbo-16k,
+    # # gpt-4: gpt-4,
 
-    # Other
+    # # Other
     # gpt4all-j: nomic-ai/gpt4all-j,
     # falcon-7b-instruct: tiiuae/falcon-7b-instruct,
     # mpt-7b-instruct: mosaicml/mpt-7b-instruct,
