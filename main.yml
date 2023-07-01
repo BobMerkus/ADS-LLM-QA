@@ -1,6 +1,6 @@
 # This is a config file for runtime `main.py`. It contains the following settings:
 data:
-  data_sources: [aws, kubernetes] #aws, kubernetes, stackexchange
+  data_sources: [aws] #aws, kubernetes, stackexchange
   data_modalities: [text] #text, table
   save_directory: ./data/out/
   aws_documentation_repository: https://github.com/siagholami/aws-documentation.git
