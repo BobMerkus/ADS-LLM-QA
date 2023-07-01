@@ -4,6 +4,7 @@ data/faiss/
 data/stackexchange_kubernetes.db
 data/ca.crt
 data/out/
+data/aws-documentation/
 data/AZURE_BING_KEY.txt
 data/OPEN_AI_KEY.txt
 data/GITHUB_KEY.txt
